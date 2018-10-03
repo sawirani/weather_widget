@@ -1,0 +1,12 @@
+h1{
+    color: green;
+}
+ul{
+    display: flex;
+    border: 0.5px solid yellowgreen;
+    justify-content: center;
+    background: lightyellow;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

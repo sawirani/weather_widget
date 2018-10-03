@@ -1,5 +1,7 @@
-.wid{
+.button{
     display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
+    align-self: flex-end;
+}
+.p{
+    justify-content: center;
 }

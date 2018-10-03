@@ -2,22 +2,23 @@ import React, { Component } from 'react';
 import './App.css';
 import AddWidget from "./components/addwidget";
 import GetWidget from "./components/getwidget";
+import Nav from "./components/navs"
 
 class App extends Component {
 
   AddCity = (city) => {
-    let widget = [...this.state.cities];
-    widget.push(city);
+    let cities = [...this.state.cities];
+    cities.push(city);
     this.setState({
-      widget
+      cities
     })
   };
 
   DelCity = (i) => {
-    let widget = [...this.state.cities];
-    widget.splice(i,1);
+    let cities = [...this.state.cities];
+    cities.splice(i,1);
     this.setState({
-      widget
+      cities
     })
   };
 
@@ -32,8 +33,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <AddWidget data={this.AddCity}/>
-        <GetWidget data = {this.state.cities} delete = {this.DelCity}/>
+        <Nav/>
+        <div className='contener'>
+          <AddWidget data={this.AddCity}/>
+          <div className='contener2'>
+            <GetWidget data = {this.state.cities} delete = {this.DelCity}/>
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './addwidget.css'
 
 class AddWidget extends Component {
 
@@ -19,9 +20,9 @@ class AddWidget extends Component {
   render() {
 
     return (
-      <div>
-        <input type='text' value={this.state.city} onChange={this.setCity}/>
-        <button onClick={()=>{this.props.data(this.state.city)}}> Добавить город</button>
+      <div className='add'>
+        <input className='input' type='text' value={this.state.city} onChange={this.setCity}/>
+        <button className='butt' onClick={()=>{this.props.data(this.state.city)}}> Добавить город</button>
       </div>
     )
   }

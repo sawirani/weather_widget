@@ -6,10 +6,10 @@ class Widget extends Component{
   render(){
     return(
       <div className='wid'>
-        Город:{this.props.city}
+        <p>{this.props.city}</p>
         <br/>
           Температура: {this.props.temp}
-          <button onClick={()=>{this.props.delete(this.props.key)}}>Удалить</button>
+          <button className='button' onClick={()=>{this.props.delete(this.props.number)}}>Удалить</button>
       </div>
     )
   }

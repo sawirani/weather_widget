@@ -27,10 +27,6 @@ class Data extends Component{
           city,temp
         });
       }.bind(this));
-  /*    .then(function (resp){
-        console.log(resp);
-      });
-*/
   }
 
 
@@ -44,7 +40,7 @@ class Data extends Component{
     return(
 
       <div>
-      <Widget city = {this.state.city} temp = {this.state.temp} key ={this.props.key} delete = {this.props.delete}/>
+      <Widget city = {this.state.city} temp = {this.state.temp} number ={this.props.number} delete = {this.props.delete}/>
       </div>
     )
   }
