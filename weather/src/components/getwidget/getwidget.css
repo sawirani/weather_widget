@@ -1,4 +1,8 @@
 .wid{
     height: 150px;
-    width: 200px;
+    width: 120px;
+    border: 0.5px solid black;
+}
+.pad{
+    padding: 10px;
 }

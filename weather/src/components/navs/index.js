@@ -7,7 +7,7 @@ class Nav extends Component{
     return(
       <div>
         <ul>
-          <h1> Погода </h1>
+          <h1> Weather </h1>
         </ul>
       </div>
     )

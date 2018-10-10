@@ -20,6 +20,7 @@ class Data extends Component{
     axios.get(
       'https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="' + this.state.city +'") and u="c" &format=json&env=store://datatables.org/alltableswithkeys')
       .then(function (response) {
+        console.log(response.data.query.results);
         temp = response.data.query.results.channel.item.condition.temp;
         city = response.data.query.results.channel.location.city;
 

@@ -22,7 +22,7 @@ class AddWidget extends Component {
     return (
       <div className='add'>
         <input className='input' type='text' value={this.state.city} onChange={this.setCity}/>
-        <button className='butt' onClick={()=>{this.props.data(this.state.city)}}> Добавить город</button>
+        <button className='butt' onClick={()=>{this.props.data(this.state.city)}}> Add city</button>
       </div>
     )
   }

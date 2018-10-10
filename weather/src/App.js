@@ -26,13 +26,15 @@ class App extends Component {
     super();
 
     this.state = {
-      cities: ['Москва'],
+        cities: [],
     }
   }
 
+
+
   render() {
     return (
-      <div>
+      <div className='fon'>
         <Nav/>
         <div className='contener'>
           <AddWidget data={this.AddCity}/>
